@@ -1,7 +1,0 @@
-127.0.0.1   localhost
-192.168.99.101  master  master.local
-192.168.99.102  slave   slave.local
-
-<% @hosts.each do |node| %>
-<%= node['ipaddress'] %> <%= node['hostname'] %> <%= node['fqdn'] %>
-<% end %>
