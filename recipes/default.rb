@@ -9,3 +9,6 @@
 rpm_package 'postfix' do
   action :remove
 end
+execute "yum-update" do
+  command "yum update -y"
+end
